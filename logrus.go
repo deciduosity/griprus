@@ -96,8 +96,6 @@ func ConvertMessage(logger *logrus.Logger, m message.Composer) *logrus.Entry {
 	default:
 		return e.WithField("payload", payload)
 	}
-
-	return nil
 }
 
 // NewLogger produces a logger that writes all logs to the underlying
